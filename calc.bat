@@ -30,6 +30,7 @@
 :start
 setlocal enabledelayedexpansion
 title Module Note Calculator
+chcp 65001
 rem for /f "tokens=2 delims=:" %%i in ('mode con ^| findstr "Columns"') do set /a width=%%i
 set /a mid = 10 & rem (width / 2) - 20
 set "clear=cls&echo [%mid%G[94m[0;1;104mModule Note Calculator[0;106;94m[0;1;30;106mby Benzaria[0;96m[0m"
